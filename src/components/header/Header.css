@@ -1,0 +1,51 @@
+.Header {
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+p {
+    position: absolute;
+    height: 28px;
+    left: 27.74%;
+    right: 27.99%;
+    top: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #000000;
+    
+}
+
+#searchIcon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 8px;
+    top: 8px;
+}
+
+#refreshIcon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 7px;
+    top: 8px;
+}
+
+#koroneIcon {
+    position: absolute;
+    height: 48px;
+    left: 53.44%;
+    right: 30.03%;
+    top: 0px;
+}
