@@ -1,0 +1,26 @@
+.Footer {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    top: 0px;
+    background: #EAEAEA;
+}
+
+p.foot {
+    position: absolute;
+    height: 28px;
+    right: 16px;
+    top: 10px;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0;
+    color: #808080;
+    
+}

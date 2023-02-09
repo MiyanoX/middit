@@ -1,12 +1,13 @@
 .Header {
-    position: absolute;
+    position: sticky;
     width: 100%;
     height: 48px;
     top: 0px;
     background: #FFFFFF;
+    z-index: 10000;
 }
 
-p {
+#title {
     position: absolute;
     height: 28px;
     left: 27.74%;
@@ -15,7 +16,7 @@ p {
 
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
     display: flex;

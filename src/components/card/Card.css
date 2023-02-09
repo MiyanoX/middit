@@ -1,0 +1,99 @@
+.Card {
+    position: relative;
+    height: auto;
+    margin: 24px 24px 0 24px;
+    background: #FFFFFF;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 24px;
+}
+
+.UpIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 24px;
+    top: 24px;
+}
+
+.DownIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 24px;
+    top: 72px;
+}
+
+.ContentContainer {
+    position: relative;
+    display: grid;
+    max-width: calc(100% - 96px);
+    left: 72px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.Vote {
+    position: absolute;
+    width: 36px;
+    height: 24px;
+    left: 18px;
+    top: 48px;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000000;
+}
+
+.Channel {
+    position: relative;
+    height: 12px;
+    margin: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+
+    color: #505050;
+}
+
+.Title {
+    position: relative;
+    height: auto;
+    margin: 12px 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.ImageContainer {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.ImageContainer #image {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

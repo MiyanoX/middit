@@ -5,12 +5,11 @@ import "./Header.css";
 
 export const Header = () => {
     return (
-        <div className="Header">
+        <div  className="Header">
             <img src={Refresh} id="refreshIcon"/>
             <img src={Korone} id="koroneIcon"/>
-            <p>Middit</p>
+            <p id="title" >MiDDiT</p>
             <img src={Search} id="searchIcon"/>
         </div>
-        
     )
 }

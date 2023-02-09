@@ -6,9 +6,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header  />
-      <Body className="Body" />
-      <Footer className="Footer" />
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }
