@@ -23,13 +23,13 @@
     top: 72px;
 }
 
-.ContentContainer {
+.CardContent {
     position: relative;
     display: grid;
     max-width: calc(100% - 96px);
     left: 72px;
     margin-top: 8px;
-    margin-bottom: 18px;
+    margin-bottom: 0;
 }
 
 .Vote {
@@ -75,8 +75,8 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 15px;
+    font-size: 24px;
+    line-height: 24px;
     display: flex;
     align-items: center;
 
@@ -96,4 +96,39 @@
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.CardFunction {
+    position: relative;
+    height: 24px;
+    width: calc(100% - 96px);
+    left: 72px;
+    margin: 18px;
+}
+
+#commentIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.Comment {
+    position: absolute;
+    height: 24px;
+    left: 36px;
+    margin: 0;
+    width: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    
+    color: #606060;
+}
+
+#hideIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 24px;
 }
