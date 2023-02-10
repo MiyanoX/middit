@@ -10,8 +10,8 @@
 #title {
     position: absolute;
     height: 28px;
-    left: 27.74%;
-    right: 27.99%;
+    left: 30%;
+    right: 30%;
     top: 10px;
 
     font-family: 'Inter';
@@ -33,14 +33,40 @@
     height: 32px;
     right: 8px;
     top: 8px;
+    
+}
+
+#searchIcon:hover {
+    background: #EEEEEE;
+    border-radius: 6px;
+    
+}
+
+#searchIcon:active {
+    background: #d0d0d0;
+    
 }
 
 #refreshIcon {
     position: absolute;
     width: 32px;
     height: 32px;
-    left: 7px;
+    left: 8px;
     top: 8px;
+}
+
+#refreshIcon:hover {
+    border-radius: 6px;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 #koroneIcon {

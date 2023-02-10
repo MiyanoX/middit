@@ -1,0 +1,43 @@
+#searchBar {
+    position: absolute;
+    width: 256px;
+    height: 32px;
+    top: 8px;
+    left: calc(50% - 128px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EEEEEE;
+    border-radius: 32px;
+    animation-name: barAppear;
+    animation-duration: 0.5s;
+}
+
+#searchInput {
+    position: absolute;
+    width: 224px;
+    height: 100%;
+    font-size: 18px;
+    border: 0;
+    padding: 0;
+    
+    background: #EEEEEE;
+    animation-name: inpurAppear;
+    animation-duration: 0.5s;
+}
+
+@keyframes barAppear {
+    0%   {width: 32px;}
+    100% {}
+}
+
+@keyframes inpurAppear {
+    0%   {width: 0px;}
+    100% {}
+}
+
+
+#searchInput:focus {
+    outline: none;
+}
