@@ -37,7 +37,7 @@
     display: grid;
     max-width: calc(100% - 96px);
     left: 72px;
-    margin-top: 8px;
+    margin-top: 24px;
     margin-bottom: 0;
 }
 
@@ -97,7 +97,7 @@
     position: relative;
     max-width: 100%;
     height: auto;
-    
+    margin-top: 16px;
 }
 
 .ImageContainer #image {
@@ -112,7 +112,7 @@
     height: 24px;
     width: calc(100% - 96px);
     left: 72px;
-    margin: 18px;
+    margin: 18px 0;
 }
 
 #commentIcon {
@@ -139,7 +139,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    right: 24px;
+    right: 0px;
     border-radius: 4px;
 }
 

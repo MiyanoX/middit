@@ -4,7 +4,7 @@ import Refresh from "../../img/Refresh.svg";
 import { SearchBar } from "../searchBar/SearchBar";
 import "./Header.css";
 import { useState } from "react";
-import { setNewCards } from "../cards/cardsSlice";
+import { fetchRedditPopular } from "../cards/cardsSlice";
 import { useDispatch } from "react-redux";
 
 export const Header = () => {
@@ -14,7 +14,7 @@ export const Header = () => {
 
     return (
         <div  className="Header">
-            <img src={Refresh} onClick={() => dispatch(setNewCards())} id="refreshIcon"/>
+            <img src={Refresh} onClick={() => dispatch(fetchRedditPopular())} id="refreshIcon"/>
             {searchBarDisplay ? <SearchBar value={inputValue} setInputValue={setInputValue}/>: <div><img src={Korone} id="koroneIcon"/><p id="title" >MiDDiT</p></div>}
             <img src={Search} onClick={() => setSearchBarDisplay(!searchBarDisplay)} id="searchIcon"/>
         </div>
