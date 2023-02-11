@@ -12,3 +12,18 @@
     opacity: 0;
     transition: opacity 200ms;
 }
+
+#loading {
+    height: 300px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 36px 0;
+    color: #bebebe;
+}
