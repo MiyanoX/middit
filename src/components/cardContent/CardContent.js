@@ -1,12 +1,10 @@
-import KoroneBig from "../../img/KoroneBig.PNG";
-
-export const CardContent = () => {
+export const CardContent = ({cardId, channel, title, image}) => {
     return (
         <div className="CardContent">
-            <p className="Channel">r/interestingasfuck •Posted by u/JarethKingofGoblins</p>
-            <p className="Title">AMC Theaters to Change Movie Ticket Prices Based on Seat Location</p>
+            <p className="Channel">{channel}</p>
+            <p className="Title">Card {cardId}: {title}</p>
             <div className="ImageContainer">
-                <img src={KoroneBig} id="image"/>
+                <img src={image} id="image"/>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import { Header } from './components/header/Header';
-import { Body } from './components/body/Body';
+import { Cards } from './components/cards/Cards';
 import { Footer } from './components/footer/Footer';
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Body />
+      <Cards />
       <Footer />
     </div>
   );

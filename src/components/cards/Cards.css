@@ -1,0 +1,14 @@
+.Cards {
+    position: relative;
+    background: #EAEAEA;
+    display: grid;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
