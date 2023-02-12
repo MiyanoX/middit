@@ -4,13 +4,15 @@ import { selectAllCards } from "./cardsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchRedditPopular } from "./cardsSlice";
+import { selectInputValue } from "../searchBar/searchSlice";
 
 export const Cards = () => {
     const cards = useSelector(selectAllCards);
+    const inputValue = useSelector(selectInputValue);
     const dispatch = useDispatch();
 
     const cardToDisplay = () => {
-        return Object.values(cards).filter((card) => card.display);
+        return Object.values(cards).filter((card) => card.display & card.title.toLowerCase().includes(inputValue.toLowerCase()));
     }
 
     useEffect(() => {

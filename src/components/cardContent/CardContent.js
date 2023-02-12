@@ -32,7 +32,7 @@ export const CardContent = ({cardId}) => {
 
     return (
         <div className="CardContent">
-            <p className="Channel">{card.channel} Posted by u/{card.authorName}</p>
+            <p className="Channel"><strong>{card.channel}</strong>&nbsp;&nbsp;•Posted by u/{card.authorName}</p>
             <p className="Title">{card.title}</p>
             <div className="MediaContainer">
                 {mediaContent()}

@@ -9,7 +9,7 @@
     justify-content: center;
 
     background: #EEEEEE;
-    border-radius: 32px;
+    border-radius: 16px;
     animation-name: barAppear;
     animation-duration: 0.5s;
 }
@@ -40,4 +40,16 @@
 
 #searchInput:focus {
     outline: none;
+}
+
+#clearIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 4px;
+    border-radius: 12px;
+}
+
+#clearIcon:hover {
+    background: #ffffff;
 }

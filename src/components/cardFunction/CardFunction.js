@@ -3,6 +3,7 @@ import Comment from "../../img/Comment.svg";
 import Hide from "../../img/Hide.svg";
 import { setAnimationHide, setDisplayFalse } from "../cards/cardsSlice";
 import { useSelector } from "react-redux";
+import { nFormatter } from "../../util/numberTransform";
 
 const sleep = (ms=500) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -19,7 +20,7 @@ export const CardFunction = ({cardId}) => {
     return (
         <div className="CardFunction">
             <img src={Comment} id="commentIcon"/>
-            <p className="Comment">{card.commentNumber} comments</p>
+            <p className="Comment">{nFormatter(card.commentNumber, 1)} comments</p>
             <img src={Hide} onClick={handleClick} id="hideIcon"/>
         </div>
     )

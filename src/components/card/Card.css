@@ -50,7 +50,7 @@
     margin: 0;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 15px;
     line-height: 15px;
     display: flex;
@@ -74,6 +74,10 @@
     align-items: center;
 
     color: #505050;
+}
+
+strong {
+    white-space: break-spaces;
 }
 
 .Title {
@@ -166,3 +170,4 @@
 #hideIcon:hover {
     background: #dedede;
 }
+

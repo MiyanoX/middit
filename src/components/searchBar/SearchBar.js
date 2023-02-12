@@ -1,13 +1,24 @@
+import { useDispatch, useSelector } from "react-redux";
+import Clear from "../../img/Clear.svg";
 import "./SearchBar.css";
+import { clearSearchBar, selectInputValue, setInputValue } from "./searchSlice";
 
-export const SearchBar = ({value, setInputValue}) => {
+export const SearchBar = () => {
+    const inputValue = useSelector(selectInputValue);
+    const dispatch = useDispatch();
+
     const handleInputValue = (e) => {
-        setInputValue(e.target.value);
+        dispatch(setInputValue(e.target.value));
+    }
+
+    const handleClear = (e) => {
+        dispatch(clearSearchBar());
     }
 
     return (
         <div id="searchBar">
-            <input id="searchInput" value={value} onChange={handleInputValue}/>
+            <input id="searchInput" value={inputValue} onChange={handleInputValue}/>
+            <img src={Clear} id="clearIcon" onClick={handleClear}/>
         </div>
     )
 }

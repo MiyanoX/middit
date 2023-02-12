@@ -1,6 +1,7 @@
 import Up from "../../img/Up.svg";
 import Down from "../../img/Down.svg";
 import { useSelector } from "react-redux";
+import { nFormatter } from "../../util/numberTransform";
 
 export const Vote = ({  cardId }) => {
     const card = useSelector(state => state.cards.cards[cardId])
@@ -9,7 +10,7 @@ export const Vote = ({  cardId }) => {
         <div>
             <img src={Up} className="UpIcon" />
             <img src={Down} className="DownIcon" />
-            <p className="Vote" >{card.voteNumber}</p>
+            <p className="Vote" >{nFormatter(card.voteNumber, 1)}</p>
         </div>
     )
 }
