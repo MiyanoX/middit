@@ -1,11 +1,13 @@
 .Card {
     position: relative;
     height: auto;
-    margin: 24px 24px 0 24px;
+    margin: 24px calc(50% - 268px) 0 calc(50% - 268px);
     background: #FFFFFF;
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 24px;
 }
+
+
 
 .Card.hide{
     animation: bounce-out 0.5s ease-in;
@@ -131,12 +133,24 @@ strong {
     color: #bebebe;
 }
 
+a:link { 
+    text-decoration: none;
+    color: #000000; 
+}
+a:hover { 
+    text-decoration: none; 
+    background: #dedede;
+    border-radius: 4px;
+}
+a::after { text-decoration: none; }
+
 .CardFunction {
     position: relative;
     height: 24px;
     width: calc(100% - 96px);
     left: 72px;
     margin: 18px 0;
+    color: #000000; 
 }
 
 #commentIcon {
@@ -155,7 +169,9 @@ strong {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
     color: #606060;
 }
 
@@ -171,3 +187,25 @@ strong {
     background: #dedede;
 }
 
+@media only screen and (max-width: 600px) {
+    .Card {
+        margin: 24px 24px 0 24px;
+    }
+    .MediaContainer {
+        margin-top: 0;
+    }
+    .Title {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .Channel {
+        font-size: 10px;
+    }
+    .Comment {
+        font-size: 15px;
+        margin-top: 2px;
+    }
+    .MediaContainer #link {
+        font-size: 15px;
+    }
+}
