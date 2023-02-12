@@ -147,7 +147,7 @@ a::after { text-decoration: none; }
 .CardFunction {
     position: relative;
     height: 24px;
-    width: calc(100% - 96px);
+    max-width: calc(100% - 96px);
     left: 72px;
     margin: 18px 0;
     color: #000000; 
@@ -191,8 +191,20 @@ a::after { text-decoration: none; }
     .Card {
         margin: 24px 24px 0 24px;
     }
+
     .CardContent {
         margin-top: 8px;
+        left: 60px;
+        max-width: calc(100% - 84px);
+    }
+
+    .Vote {
+        left: 12px;
+    }
+
+    .DownIcon,
+    .UpIcon {
+        left: 18px;
     }
     .MediaContainer {
         margin-top: 0;
@@ -211,5 +223,11 @@ a::after { text-decoration: none; }
     }
     .MediaContainer #link {
         font-size: 15px;
+    }
+    .CardFunction {
+        margin-top: 4px;
+        margin-bottom: 6px;
+        left: 60px;
+        max-width: calc(100% - 84px);
     }
 }
