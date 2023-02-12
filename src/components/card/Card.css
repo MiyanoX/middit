@@ -93,18 +93,38 @@
 }
 
 
-.ImageContainer {
+.MediaContainer {
     position: relative;
     max-width: 100%;
     height: auto;
     margin-top: 16px;
 }
 
-.ImageContainer #image {
+.MediaContainer #image {
     position: relative;
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.MediaContainer #video {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.MediaContainer #link {
+    font-family: 'Inter';
+    font-style: normal;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    color: #bebebe;
 }
 
 .CardFunction {

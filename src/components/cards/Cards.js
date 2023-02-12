@@ -26,7 +26,6 @@ export const Cards = () => {
             </div>
         )
     } else {
-        console.log(cards);
         return (
             <div id="loading">
                 <p>Loading...</p>
