@@ -17,7 +17,7 @@ export const Cards = () => {
 
     useEffect(() => {
         dispatch(fetchRedditPopular());
-    }, [])
+    }, [dispatch])
 
     if (Object.keys(cards).length !== 0) {
         return (
