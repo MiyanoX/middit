@@ -8,8 +8,8 @@ export const Vote = ({  cardId }) => {
 
     return (
         <div>
-            <img src={Up} className="UpIcon" />
-            <img src={Down} className="DownIcon" />
+            <img src={Up} alt="up" className="UpIcon" />
+            <img src={Down} alt="down" className="DownIcon" />
             <p className="Vote" >{nFormatter(card.voteNumber, 1)}</p>
         </div>
     )

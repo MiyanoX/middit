@@ -18,7 +18,7 @@ export const SearchBar = () => {
     return (
         <div id="searchBar">
             <input id="searchInput" value={inputValue} onChange={handleInputValue}/>
-            <img src={Clear} id="clearIcon" onClick={handleClear}/>
+            <img src={Clear} alt="clear" id="clearIcon" onClick={handleClear}/>
         </div>
     )
 }
