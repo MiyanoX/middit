@@ -21,7 +21,7 @@ export const fetchRedditPopular = createAsyncThunk(
     
         const elements = responseJson.data.children;
         const cardData = {}
-        elements.map((element) => {
+        elements.forEach((element) => {
             const data = element.data
             const id = data.id
             cardData[id] = {
