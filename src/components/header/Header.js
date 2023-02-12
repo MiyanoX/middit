@@ -23,9 +23,9 @@ export const Header = () => {
 
     return (
         <div  className="Header">
-            <img src={Refresh} onClick={handleRefreshClick} id="refreshIcon"/>
+            <img src={Refresh} alt="refresh" onClick={handleRefreshClick} id="refreshIcon"/>
             {searchBarDisplay ? <SearchBar />: <div><img src={Korone} alt="korone" id="koroneIcon"/><p id="title" >MiDDiT</p></div>}
-            <img src={Search} onClick={handleSearchClick} id="searchIcon"/>
+            <img src={Search} alt="search" onClick={handleSearchClick} id="searchIcon"/>
         </div>
     )
 }
