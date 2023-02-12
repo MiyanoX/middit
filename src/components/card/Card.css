@@ -1,7 +1,7 @@
 .Card {
     position: relative;
     height: auto;
-    margin: 24px calc(50% - 268px) 0 calc(50% - 268px);
+    margin: 24px calc(50% - 360px) 0 calc(50% - 360px);
     background: #FFFFFF;
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 24px;
@@ -187,9 +187,12 @@ a::after { text-decoration: none; }
     background: #dedede;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .Card {
         margin: 24px 24px 0 24px;
+    }
+    .CardContent {
+        margin-top: 8px;
     }
     .MediaContainer {
         margin-top: 0;
@@ -197,6 +200,7 @@ a::after { text-decoration: none; }
     .Title {
         font-size: 15px;
         line-height: 15px;
+        margin-top: 6px;
     }
     .Channel {
         font-size: 10px;
