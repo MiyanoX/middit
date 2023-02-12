@@ -14,7 +14,7 @@ export const CardContent = ({cardId}) => {
             }
             case "image": {
                 return (
-                    <img src={card.contentLink} id="image"/>
+                    <img src={card.contentLink} alt="cardImage" id="image"/>
                 )
             }
             case "link": {
