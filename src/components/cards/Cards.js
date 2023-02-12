@@ -1,10 +1,10 @@
-import { Card } from "../card/Card";
-import "./Cards.css";
-import { selectAllCards } from "./cardsSlice";
-import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
+import { Card } from "../card/Card";
+import { selectAllCards } from "./cardsSlice";
 import { fetchRedditPopular } from "./cardsSlice";
+import { useDispatch, useSelector } from "react-redux";
 import { selectInputValue } from "../searchBar/searchSlice";
+import "./Cards.css";
 
 export const Cards = () => {
     const cards = useSelector(selectAllCards);
