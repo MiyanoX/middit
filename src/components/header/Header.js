@@ -3,7 +3,7 @@ import Korone from "../../img/Korone.svg";
 import Refresh from "../../img/Refresh.svg"; 
 import { SearchBar } from "../searchBar/SearchBar";
 import "./Header.css";
-import { clearCards, fetchRedditPopular } from "../cards/cardsSlice";
+import { clearCards, fetchRedditData } from "../cards/cardsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { selectSearchBarDisplay, setSearchBarDisplay } from "../searchBar/searchSlice";
 
@@ -13,7 +13,7 @@ export const Header = () => {
 
     const handleRefreshClick = (e) => {
         dispatch(clearCards());
-        dispatch(fetchRedditPopular())
+        dispatch(fetchRedditData())
     }
 
     const handleSearchClick = (e) => {
