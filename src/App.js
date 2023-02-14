@@ -19,7 +19,7 @@ function App() {
     window.addEventListener("resize", handleScreenSizeChange);
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleScreenSizeChange);
-  }, []); 
+  }, [dispatch]); 
 
   return (
     <div className="App">
