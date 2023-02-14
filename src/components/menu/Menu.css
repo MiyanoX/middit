@@ -59,6 +59,17 @@ p#topic:hover {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+    #slider {
+        position: fixed;
+        left: 0;
+        right: 0px;
+        height: 100%;
+        z-index: 100;
+    }
+
+}
+
 .slide-in {
     animation: slide-in 0.5s forwards;
     -webkit-animation: slide-in 0.5s forwards;

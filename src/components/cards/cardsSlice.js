@@ -30,7 +30,7 @@ export const fetchRedditData = createAsyncThunk(
                 animation: 'display',
                 channel: data.subreddit_name_prefixed,
                 authorName: data.author,
-                title: data.title,
+                title: data.title.length < 80 ? data.title : data.title.slice(0, 80) + " ...",
                 commentNumber: data.num_comments,
                 voteNumber: data.ups,
                 contentLink: data.url_overridden_by_dest,
