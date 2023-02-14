@@ -29,6 +29,7 @@ export const Menu = () => {
                 {menuList.map((topic) => 
                     <p id="topic" key={uuidv4()} onClick={() => {
                         dispatch(fetchRedditData(topic)); 
+                        window.scrollTo(0, 0)
                         if (screenWidth <= 1000) {
                             dispatch(setMenuDisplay());
                         }

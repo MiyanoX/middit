@@ -14,8 +14,9 @@ p.Menu {
 }
 
 #menuList {
-    position: relative;
+    position: absolute;
     justify-content: center;
+    width: 200px;
 }
 
 #slider {
