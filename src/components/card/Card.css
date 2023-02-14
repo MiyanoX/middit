@@ -105,13 +105,16 @@ strong {
 .MediaContainer {
     position: relative;
     max-width: 100%;
+    max-height: 400px;
     height: auto;
     margin-top: 16px;
+    
 }
 
 .MediaContainer #image {
     position: relative;
     max-width: 100%;
+    max-height: 400px;
     height: auto;
     object-fit: cover;
 }
@@ -223,6 +226,9 @@ a::after { text-decoration: none; }
     .Comment {
         font-size: 15px;
         margin-top: 2px;
+    }
+    .MediaContainer #image {
+        max-height: 200px;
     }
     .MediaContainer #link {
         font-size: 15px;
