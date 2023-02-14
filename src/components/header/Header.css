@@ -47,6 +47,23 @@
     
 }
 
+#menuIcon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 8px;
+    top: 8px;
+}
+
+#menuIcon:hover {
+    border-radius: 6px;
+    background: #EEEEEE;
+}
+
+#menuIcon:active {
+    background: #d0d0d0;
+}
+
 #refreshIcon {
     position: absolute;
     width: 32px;

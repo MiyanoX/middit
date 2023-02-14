@@ -1,11 +1,12 @@
 import Search from "../../img/Search.svg";
 import Korone from "../../img/Korone.svg";
-import Refresh from "../../img/Refresh.svg"; 
+// import Refresh from "../../img/Refresh.svg"; 
+import Menu from "../../img/Menu.svg"
 import { SearchBar } from "../searchBar/SearchBar";
 import "./Header.css";
 import { clearCards, fetchRedditData } from "../cards/cardsSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { selectSearchBarDisplay, setSearchBarDisplay } from "../searchBar/searchSlice";
+import { selectSearchBarDisplay, setMenuDisplay, setSearchBarDisplay} from "../searchBar/searchSlice";
 
 export const Header = () => {
     const searchBarDisplay = useSelector(selectSearchBarDisplay);
@@ -20,11 +21,16 @@ export const Header = () => {
         dispatch(setSearchBarDisplay());
     }
 
+    const handleMenuClick = (e) => {
+        dispatch(setMenuDisplay());
+    }
+
 
     return (
         <div  className="Header">
-            <img src={Refresh} alt="refresh" onClick={handleRefreshClick} id="refreshIcon"/>
-            {searchBarDisplay ? <SearchBar />: <div><img src={Korone} alt="korone" id="koroneIcon"/><p id="title" >MiDDiT</p></div>}
+            {/* <img src={Refresh} alt="refresh" id="refreshIcon"/> */}
+            <img src={Menu} alt="menu" id="menuIcon" onClick={handleMenuClick} />
+            {searchBarDisplay ? <SearchBar />: <div><img src={Korone} alt="korone" onClick={handleRefreshClick} id="koroneIcon"/><p  onClick={handleRefreshClick} id="title" >MiDDiT</p></div>}
             <img src={Search} alt="search" onClick={handleSearchClick} id="searchIcon"/>
         </div>
     )

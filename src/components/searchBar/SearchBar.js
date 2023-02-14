@@ -19,7 +19,7 @@ export const SearchBar = () => {
 
     return (
         <div id="searchBar">
-            <input id="searchInput" placeHolder="Input subreddit" value={inputValue} onChange={handleInputValue}/>
+            <input id="searchInput" placeholder="subreddit" value={inputValue} onChange={handleInputValue}/>
             <img src={Clear} alt="clear" id="clearIcon" onClick={handleClear}/>
         </div>
     )
