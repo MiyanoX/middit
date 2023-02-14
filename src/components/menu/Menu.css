@@ -14,8 +14,8 @@ p.Menu {
 }
 
 #menuList {
-    position: absolute;
-    left: 20px;
+    position: relative;
+    justify-content: center;
 }
 
 #slider {
@@ -42,6 +42,7 @@ p#menuTitle {
 p#topic {
     position: relative;
     display: flex;
+    text-align: center;
     background-color: #ffffff;
     border-radius: 16px;
     box-sizing: border-box;
@@ -49,6 +50,7 @@ p#topic {
     height: 36px;
     width: 160px;
     padding: 6px;
+    margin: 18px auto;
     
 }
 
@@ -62,12 +64,14 @@ p#topic:hover {
 @media only screen and (max-width: 768px) {
     #slider {
         position: fixed;
-        left: 0;
-        right: 0px;
+        width: 100%;
         height: 100%;
         z-index: 100;
     }
-
+    #menuList {
+        position: relative;
+        justify-content: center;
+    }
 }
 
 .slide-in {
