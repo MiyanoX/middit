@@ -1,8 +1,9 @@
 .Card {
     position: relative;
-    border: solid #f7533d;
     box-sizing: border-box;
-    border-width: 1px;
+    border-bottom: solid #f7533d;
+    border-right: solid #f7533d;
+    border-width: 2px;
     height: auto;
     margin: 24px calc(50% - 360px) 0 calc(50% - 360px);
     background: #FFFFFF;

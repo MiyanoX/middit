@@ -5,6 +5,10 @@
     top: 0px;
     background: #FFFFFF;
     z-index: 10000;
+    box-sizing: border-box;
+    border-bottom: solid #f7533d;
+    border-right: solid #f7533d;
+    border-width: 2px;
 }
 
 #title {

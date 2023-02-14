@@ -49,13 +49,14 @@ p#topic {
     height: 36px;
     width: 160px;
     padding: 6px;
-    font-weight: bold;
+    
 }
 
 p#topic:hover {
     transform: translateY(-5%);
     box-shadow: 0 1px 2px rgba(0,0,0,1);
     transform: scale(1.05, 1.05);
+    font-weight: bold;
 }
 
 .slide-in {
