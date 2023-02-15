@@ -76,25 +76,25 @@ p#topic:hover {
 }
     
 @keyframes slide-in {
-    0% { width: 0px; transform: translateX(-100%); opacity: 0;}
+    0% { width: 0px; transform: translateX(-100%); opacity: 0; visibility: hidden;}
     50% { opacity: 0;}
-    100% { width: 200px; transform: translateX(0%); opacity: 1;}
+    100% { width: 200px; transform: translateX(0%); opacity: 1; visibility: visible;}
 }
 
 @-webkit-keyframes slide-in {
-    0% { width: 0px; transform: translateX(-100%); opacity: 0;}
+    0% { width: 0px; transform: translateX(-100%); opacity: 0; visibility: hidden;}
     50% { opacity: 0;}
-    100% { width: 200px; transform: translateX(0%); opacity: 1;}
+    100% { width: 200px; transform: translateX(0%); opacity: 1; visibility: visible;}
 }
     
 @keyframes slide-out {
-    0% { width: 200px; transform: translateX(0%); opacity: 1;}
+    0% { width: 200px; transform: translateX(0%); opacity: 1; visibility: visible;}
     50% { opacity: 0;}
-    100% { width: 0px; transform: translateX(-100%); opacity: 0;}
+    100% { width: 0px; transform: translateX(-100%); opacity: 0; visibility: hidden;}
 }
 
 @-webkit-keyframes slide-out {
-    0% { width: 200px; transform: translateX(0%); opacity: 1;}
+    0% { width: 200px; transform: translateX(0%); opacity: 1; visibility: visible;}
     50% { opacity: 0;}
-    100% { width: 0px; transform: translateX(-100%); opacity: 0;}
+    100% { width: 0px; transform: translateX(-100%); opacity: 0; visibility: hidden;}
 }

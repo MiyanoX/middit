@@ -9,7 +9,7 @@
     background: #FFFFFF;
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 24px;
-
+    min-height: 120px;
 }
 
 .Card.hide{
@@ -97,7 +97,8 @@ strong {
     line-height: 24px;
     display: flex;
     align-items: center;
-
+    word-wrap:break-word;
+    word-break:break-all;
     color: #000000;
 }
 
@@ -137,6 +138,35 @@ strong {
     align-items: right;
     justify-content: right;
     color: #bebebe;
+}
+
+.cardIntroMarkdown p {
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 12px 0 0 0;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+p.readMore {
+    position: relative;
+    display: block;
+    margin: 0 0 0 auto;
+    font-size: 18px;
+    padding: 4px;
+    border: solid 2px  #dedede;
+    font-family:'Times New Roman', Times, serif;
+    color: #c5c5c5;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    border-radius: 6px;
+    
+}
+
+p.readMore:hover {
+    background-color: #dedede;
+    color: #ffffff;
 }
 
 a:link { 
@@ -238,5 +268,8 @@ a::after { text-decoration: none; }
         margin-bottom: 6px;
         left: 60px;
         max-width: calc(100% - 84px);
+    }
+    .cardIntroMarkdown p {
+        font-size: 15px;
     }
 }

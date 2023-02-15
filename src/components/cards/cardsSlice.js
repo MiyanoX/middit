@@ -1,18 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-// const randomNumber = () => Math.ceil(Math.random() * 9 + 1);
-
-// const generateCard = (id) => ({
-//     id: id,
-//     display: true,
-//     animation: 'display',
-//     channel: "r/interestingasfuck •Posted by u/JarethKingofGoblins",
-//     title: "AMC Theaters to Change Movie Ticket Prices Based on Seat Location",
-//     image: KoroneBig,
-//     commentNumber: 2100,
-//     voteNumber: 3200,
-// })
-
 export const fetchRedditData = createAsyncThunk(
     "cards/fetchRedditPopular",
     async (channel="home", thunkAPI) => {
@@ -27,10 +14,11 @@ export const fetchRedditData = createAsyncThunk(
             cardData[id] = {
                 id: id,
                 display: true,
+                textDisplay: false,
                 animation: 'display',
                 channel: data.subreddit_name_prefixed,
                 authorName: data.author,
-                title: data.title.length < 80 ? data.title : data.title.slice(0, 80) + " ...",
+                title: data.title,
                 commentNumber: data.num_comments,
                 voteNumber: data.ups,
                 contentLink: data.url_overridden_by_dest,
@@ -38,6 +26,7 @@ export const fetchRedditData = createAsyncThunk(
                 isVideo: data.is_video,
                 videoLink: data.secure_media,
                 permalink: data.permalink,
+                text: element.data.selftext,
             }
         })
         return cardData
@@ -58,6 +47,9 @@ export const cardsSlice = createSlice({
         },
         setAnimationHide: (state, action) => {
             state.cards[action.payload].animation = 'hide';
+        },
+        setTextDisplay: (state, action) => {
+            state.cards[action.payload].textDisplay = !state.cards[action.payload].textDisplay;
         },
         clearCards: (state, action) => {
             state.cards = {};
@@ -81,4 +73,4 @@ export const cardsSlice = createSlice({
 })
 
 export const selectAllCards = state => state.cards.cards;
-export const { setAnimationHide, setDisplayFalse, clearCards } = cardsSlice.actions;
+export const { setAnimationHide, setDisplayFalse, setTextDisplay, clearCards } = cardsSlice.actions;

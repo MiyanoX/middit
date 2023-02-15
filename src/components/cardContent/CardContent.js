@@ -1,4 +1,6 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux";
+import ReactMarkdown from 'react-markdown';
+import { setTextDisplay } from "../cards/cardsSlice";
 
 const mediaContent = (card) => {
     switch(card.postHint) {
@@ -27,8 +29,16 @@ const mediaContent = (card) => {
     }
 }
 
+const readMore = (card, dispatch) => {
+    if (card.text && card.text.length > 200) {
+        return <p className="readMore" onClick={() => dispatch(setTextDisplay(card.id))} >{ card.textDisplay ? "Hide" : "Read More"}</p>
+    }
+}
+
 export const CardContent = ({cardId}) => {
     const card = useSelector(state => state.cards.cards[cardId])
+    const cardIntroMarkdown = card.textDisplay ? card.text : card.text.slice(0, 200);
+    const dispatch = useDispatch();
 
     return (
         <div className="CardContent">
@@ -37,6 +47,8 @@ export const CardContent = ({cardId}) => {
             <div className="MediaContainer">
                 {mediaContent(card)}
             </div>
+            <ReactMarkdown className="cardIntroMarkdown" >{cardIntroMarkdown}</ReactMarkdown>
+            {readMore(card, dispatch)}
         </div>
     )
 }
