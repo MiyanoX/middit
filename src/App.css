@@ -4,7 +4,8 @@
 
 .Wrapper {
   display: grid;
-  background-color: #EAEAEA;;
+  background-color: #EAEAEA;
+  grid-auto-columns: fit-content(100%) 1fr;
 }
 
 .Menu {
