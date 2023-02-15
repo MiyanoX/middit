@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Middit - A Reddit React Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+This is a web application built with React that allows users broswer reddit contents in each subreddit and read the comments below. The Reddit JSON API is used to fetch data and deployed with Netlify:
+https://middit.netlify.app/
 
-## Available Scripts
+## Website Design
 
-In the project directory, you can run:
+![Frame 6](https://user-images.githubusercontent.com/62541265/219099821-30371de6-8a39-4573-9a63-3d486b3202de.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTML
+- CSS
+- JavaScript
+- React
+- Redux
+- Git and GitHub
+- Command line and file navigation
+- Wireframing with Figma
 
-### `npm test`
+## Getting Started
+To get started with the project, you will need to have the following tools and software installed on your machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Git
+- Node.js and npm
+- react, redux, react-redux and @reduxjs/toolkit
+- A code editor, such as Visual Studio Code
 
-### `npm run build`
+## File Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+public
+   |-- index.html
+src
+   |-- components
+   |   |-- ...
+   |-- util
+   |   |-- ...
+   |-- img
+   |   |-- ...
+   |-- index.css
+   |-- index.js
+   |-- App.css
+   |-- App.js
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+node_modules/ - contains the project dependencies
+public/ - contains the static assets and the project's HTML file
+src/ - contains the application code, including the Redux store, actions, reducers, and components
+img/ - contains all the images exported by Figma Wireframe
+App.js - the root component of the application
+index.js - the entry point of the application
+.gitignore - specifies files and directories that Git should ignore
+package.json - lists the project dependencies and scripts
+README.md - this file
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
+If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.
 
-### `npm run eject`
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
