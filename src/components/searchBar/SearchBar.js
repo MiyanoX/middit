@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import Clear from "../../img/Clear.svg";
-import { fetchRedditData } from "../cards/cardsSlice";
 import "./SearchBar.css";
 import { clearSearchBar, selectInputValue, setInputValue } from "./searchSlice";
 
