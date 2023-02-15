@@ -49,5 +49,6 @@ export const searchSlice = createSlice({
 export const selectSearchBarDisplay = state => state.search.searchBarDisplay;
 export const selectInputValue = state => state.search.inputValue;
 export const selectScreenWidth = state => state.search.screenSize.width;
+export const selectScreenHeight = state => state.search.screenSize.height;
 export const selectMenuDisplay = state => state.search.menuDisplay;
 export const { updateScreenSize, setInputValue, setSearchBarDisplay, setMenuDisplay, clearSearchBar, updateMenuDisplay } =  searchSlice.actions;

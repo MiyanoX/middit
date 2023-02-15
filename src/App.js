@@ -4,11 +4,12 @@ import { Footer } from './components/footer/Footer';
 import { Menu } from './components/menu/Menu';
 import './App.css';
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { updateMenuDisplay, updateScreenSize } from './components/searchBar/searchSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectScreenHeight, updateMenuDisplay, updateScreenSize } from './components/searchBar/searchSlice';
 
 function App() {
   const dispatch = useDispatch();
+  const displayHeight = useSelector(selectScreenHeight);
   
   useEffect(() => {
     const handleScreenSizeChange = (e) => {
@@ -24,9 +25,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className='Wrapper' >
+      <div className='Wrapper' style={{minHeight: displayHeight - 96}}>
         <Menu className="box1" />
-        <Cards className="box2"/>
+        <Cards className="box2" />
       </div>
       <Footer />
     </div>

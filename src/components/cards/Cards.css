@@ -2,6 +2,7 @@
     position: relative;
     background: #EAEAEA;
     display: grid;
+    margin-bottom: 24px;
 }
 
 .fade-exit {
@@ -14,8 +15,6 @@
 }
 
 #loading {
-    height: 300px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: bold;
