@@ -4,6 +4,11 @@
 This is a web application built with React that allows users broswer reddit contents in each subreddit and read the comments below. The Reddit JSON API is used to fetch data and deployed with Netlify:
 https://middit.netlify.app/
 
+## Website Design
+
+![Frame 6](https://user-images.githubusercontent.com/62541265/219099821-30371de6-8a39-4573-9a63-3d486b3202de.png)
+
+
 ## Tech Stack
 
 - HTML
