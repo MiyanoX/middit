@@ -13,7 +13,7 @@ const mediaContent = (card) => {
         }
         case "image": {
             return (
-                <img src={card.contentLink} alt="cardImage" id="image"/>
+                <img src={card.thumbnail} alt="cardImage" id="image"/>
             )
         }
         case "link": {
