@@ -14,12 +14,11 @@ export const SearchBar = () => {
 
     const handleClear = (e) => {
         dispatch(clearSearchBar());
-        dispatch(fetchRedditData(inputValue));
     }
 
     return (
         <div id="searchBar">
-            <input id="searchInput" placeholder="subreddit" value={inputValue} onChange={handleInputValue}/>
+            <input id="searchInput" placeholder="search" value={inputValue} onChange={handleInputValue}/>
             <img src={Clear} alt="clear" id="clearIcon" onClick={handleClear}/>
         </div>
     )
