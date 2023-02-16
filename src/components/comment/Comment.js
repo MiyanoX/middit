@@ -4,7 +4,7 @@ import "./Comment.css";
 import { clearComments } from "./commentsSlice";
 
 export const Comment = ({cardId}) => {
-    const comments = useSelector(state => state.comments.comments[cardId]);
+    const comments = useSelector(state => state.comments.comments);
     const isLoading = useSelector(state => state.comments.isLoading);
     const dispatch = useDispatch();
 
