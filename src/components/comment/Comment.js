@@ -13,7 +13,6 @@ export const Comment = ({cardId}) => {
     }
 
     if ( isLoading ) {
-        console.log("loading");
         return <p id="commentLoading">Loading...</p>
     }
 
