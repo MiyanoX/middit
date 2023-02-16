@@ -13,7 +13,7 @@ const menuAnimation = (menuDisplay) => {
     }
 }
 
-const initialMenuList = ["popular", "csgo", "premier_league", "anime"]
+const initialMenuList = ["popular", "GlobalOffensive", "premier_league", "anime", "CryptoCurrency"]
 
 export const Menu = () => {
     const menuDisplay = useSelector(selectMenuDisplay);
