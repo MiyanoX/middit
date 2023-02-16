@@ -5,6 +5,7 @@ import { fetchRedditData } from "./cardsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { selectInputValue, selectScreenHeight } from "../searchBar/searchSlice";
 import "./Cards.css";
+import GoTop from "../goTop/goTop";
 
 export const Cards = () => {
     const cards = useSelector(selectAllCards);
@@ -26,6 +27,7 @@ export const Cards = () => {
                 {cardToDisplay().map((card) =>  
                     <Card cardId={card.id} key={card.id}/>
                 )}
+                <GoTop />
             </div>
         )
     } else {

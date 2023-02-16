@@ -26,3 +26,8 @@
     margin: 36px 0;
     color: #bebebe;
 }
+
+.GoTop {
+    position: fixed;
+    right: 6px;
+}

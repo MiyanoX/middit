@@ -143,8 +143,8 @@ strong {
 
 .cardIntroMarkdown p {
     font-size: 18px;
-    font-family:'Times New Roman', Times, serif;
     margin: 12px 0 0 0;
+    font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     word-wrap:break-word;
     word-break:break-all;
 }
@@ -156,8 +156,7 @@ p.readMore {
     font-size: 18px;
     padding: 4px;
     border: solid 2px  #dedede;
-    font-family:'Times New Roman', Times, serif;
-    color: #c5c5c5;
+    color: #a3a3a3;
     font-weight: bold;
     text-align: center;
     width: fit-content;
