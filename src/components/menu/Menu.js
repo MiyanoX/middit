@@ -2,7 +2,7 @@ import "./Menu.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectMenuDisplay, setMenuDisplay, selectScreenWidth } from "../searchBar/searchSlice";
 import { v4 as uuidv4 } from 'uuid';
-import { fetchRedditData } from "../cards/cardsSlice";
+import { clearCards, fetchRedditData } from "../cards/cardsSlice";
 
 
 const menuAnimation = (menuDisplay) => {
@@ -28,8 +28,9 @@ export const Menu = () => {
             <div id="menuList" >
                 {menuList.map((topic) => 
                     <p id="topic" key={uuidv4()} onClick={() => {
+                        dispatch(clearCards());
                         dispatch(fetchRedditData(topic)); 
-                        window.scrollTo(0, 0)
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                         if (screenWidth <= 1000) {
                             dispatch(setMenuDisplay());
                         }

@@ -37,7 +37,7 @@ const readMore = (card, dispatch) => {
 
 export const CardContent = ({cardId}) => {
     const card = useSelector(state => state.cards.cards[cardId])
-    const cardIntroMarkdown = card.textDisplay ? card.text : card.text.slice(0, 200);
+    const cardIntroMarkdown = card.textDisplay ? card.text : card.text.slice(0, 200) + "...";
     const dispatch = useDispatch();
 
     return (
@@ -47,7 +47,7 @@ export const CardContent = ({cardId}) => {
             <div className="MediaContainer">
                 {mediaContent(card)}
             </div>
-            <ReactMarkdown className="cardIntroMarkdown" >{cardIntroMarkdown}</ReactMarkdown>
+            <ReactMarkdown className="cardIntroMarkdown" >{cardIntroMarkdown === "..." ? "" : cardIntroMarkdown}</ReactMarkdown>
             {readMore(card, dispatch)}
         </div>
     )

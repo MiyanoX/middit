@@ -7,15 +7,15 @@ import { selectInputValue, selectScreenHeight } from "../searchBar/searchSlice";
 import "./Cards.css";
 import GoTop from "../goTop/goTop";
 
+const cardToDisplay = (cards, inputValue) => {
+    return Object.values(cards).filter((card) => card.display & card.title.toLowerCase().includes(inputValue.toLowerCase()));
+}
+
 export const Cards = () => {
     const cards = useSelector(selectAllCards);
     const inputValue = useSelector(selectInputValue);
     const displayHeight = useSelector(selectScreenHeight);
     const dispatch = useDispatch();
-
-    const cardToDisplay = () => {
-        return Object.values(cards).filter((card) => card.display & card.title.toLowerCase().includes(inputValue.toLowerCase()));
-    }
 
     useEffect(() => {
         dispatch(fetchRedditData());
@@ -24,7 +24,7 @@ export const Cards = () => {
     if (Object.keys(cards).length !== 0) {
         return (
             <div className="Cards">
-                {cardToDisplay().map((card) =>  
+                {cardToDisplay(cards, inputValue).map((card) =>  
                     <Card cardId={card.id} key={card.id}/>
                 )}
                 <GoTop />

@@ -152,21 +152,22 @@ strong {
 p.readMore {
     position: relative;
     display: block;
-    margin: 0 0 0 auto;
+    margin: 4px 0 0 auto;
     font-size: 18px;
     padding: 4px;
-    border: solid 2px  #dedede;
-    color: #a3a3a3;
+    color: #ffffff;
     font-weight: bold;
     text-align: center;
     width: fit-content;
     border-radius: 6px;
-    
+    background-color: #f7533d;
+    border: solid 2px  #f7533d;
 }
 
 p.readMore:hover {
-    background-color: #dedede;
-    color: #ffffff;
+    color: #a3a3a3;
+    border: solid 2px  #f7533d;
+    background-color: #ffffff;
 }
 
 a:link { 
@@ -193,9 +194,14 @@ a::after { text-decoration: none; }
     position: absolute;
     width: 24px;
     height: 24px;
+    border-radius: 4px;
 }
 
-.Comment {
+#commentIcon:hover {
+    background: #dedede;
+}
+
+.CommentNumber {
     position: absolute;
     height: 24px;
     left: 36px;
@@ -270,7 +276,17 @@ a::after { text-decoration: none; }
         left: 60px;
         max-width: calc(100% - 84px);
     }
+    .Comment {
+        margin-top: 4px;
+        margin-bottom: 6px;
+        left: 60px;
+        max-width: calc(100% - 84px);
+    }
     .cardIntroMarkdown p {
         font-size: 15px;
+    }
+    p.readMore {
+        font-size: 10px;
+        padding: 2px;
     }
 }
