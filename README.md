@@ -6,8 +6,25 @@ https://middit.netlify.app/
 
 ## Website Design
 
-![Frame 6](https://user-images.githubusercontent.com/62541265/219099821-30371de6-8a39-4573-9a63-3d486b3202de.png)
+### Homepage Design
 
+![Homepage Desing](https://user-images.githubusercontent.com/62541265/219620174-a3528603-96fb-4871-bbfb-08bd236cc21f.png)
+
+### Comment Design
+
+![Comment Design](https://user-images.githubusercontent.com/62541265/219620221-a57904a6-b4c2-4e2f-aa91-cb537e5e31b7.png)
+
+## Function
+
+- MiDDiT is title of this web application, where you can click for a refresh of web page 
+- Top center also have aKorone image (My favorite Vtuber:https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q) 
+- The top left button is Menu Button, which can toggle the display state of menu bar in the right.
+- The top right button is Search Button, which can toggle the display state of search bar in the top center.
+- Left Red Bar is the subreddit selector for users.
+- Body section have several cards for contents from reddit.
+- Comment Button will show comments in this topic.
+- Hide Button will delete current card.
+- Left Bottom Button will take user to the top off page
 
 ## Tech Stack
 
@@ -34,27 +51,39 @@ To get started with the project, you will need to have the following tools and s
 public
    |-- index.html
 src
+   |-- App.css
+   |-- App.js
+   |-- App.test.js
    |-- components
-   |   |-- ...
-   |-- util
-   |   |-- ...
+   |   |-- card
+   |   |   |-- ...
+   |   |-- cardContent
+   |   |   |-- ...
+   |   |-- cardFunction
+   |   |   |-- ...
+   |   |-- cards
+   |   |   |-- ...
+   |   |-- comment
+   |   |   |-- ...
+   |   |-- footer
+   |   |   |-- ...
+   |   |-- goTop
+   |   |   |-- ...
+   |   |-- header
+   |   |   |-- ...
+   |   |-- menu
+   |   |   |-- ...
+   |   |-- searchBar
+   |   |   |-- ...
+   |   |-- vote
+   |   |   |-- ...
    |-- img
    |   |-- ...
    |-- index.css
    |-- index.js
-   |-- App.css
-   |-- App.js
+   |-- util
+   |   |-- ...
 ```
-
-node_modules/ - contains the project dependencies
-public/ - contains the static assets and the project's HTML file
-src/ - contains the application code, including the Redux store, actions, reducers, and components
-img/ - contains all the images exported by Figma Wireframe
-App.js - the root component of the application
-index.js - the entry point of the application
-.gitignore - specifies files and directories that Git should ignore
-package.json - lists the project dependencies and scripts
-README.md - this file
 
 ## Contributing
 If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.
