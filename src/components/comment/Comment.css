@@ -1,19 +1,11 @@
-.Comment {
-    position: relative;
-    height: auto;
-    max-width: calc(100% - 96px);
-    left: 72px;
-    margin-bottom: 24px;
-}
-
-.CommentMarkdown{
+.Comment{
     word-wrap:break-word;
     word-break:break-all;
     box-sizing: border-box;
-    margin: 18px 0;
+    margin: 12px 0 0 0;
     border: solid 1px #f7533d;
     border-radius: 12px;
-    padding: 12px;
+    padding: 8px;
 }
 
 .CommentMarkdown p{
@@ -25,19 +17,6 @@
     display: block;
     margin: auto;
     text-align: center;
-}
-
-#close {
-    position: relative;
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #f7533d;
-    border: solid 2px  #f7533d;
-    border-radius: 12px;
-    padding: 6px;
 }
 
 #close:hover {

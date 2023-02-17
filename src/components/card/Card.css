@@ -229,6 +229,26 @@ a::after { text-decoration: none; }
     background: #dedede;
 }
 
+.Comments {
+    position: relative;
+    height: auto;
+    max-width: calc(100% - 96px);
+    left: 72px;
+}
+
+#close {
+    position: relative;
+    display: block;
+    margin: 24px auto;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #f7533d;
+    border: solid 2px  #f7533d;
+    border-radius: 12px;
+    padding: 6px;
+}
+
 @media only screen and (max-width: 768px) {
     .Card {
         margin: 24px 24px 0 24px;
@@ -261,7 +281,6 @@ a::after { text-decoration: none; }
     }
     .Comment {
         font-size: 15px;
-        margin-top: 2px;
     }
     .MediaContainer #video,
     .MediaContainer #image {
@@ -276,7 +295,7 @@ a::after { text-decoration: none; }
         left: 60px;
         max-width: calc(100% - 84px);
     }
-    .Comment {
+    .Comments {
         margin-top: 4px;
         margin-bottom: 6px;
         left: 60px;
@@ -290,3 +309,4 @@ a::after { text-decoration: none; }
         padding: 2px;
     }
 }
+

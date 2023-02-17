@@ -18,7 +18,7 @@ const mediaContent = (card) => {
         }
         case "link": {
             return (
-                <p id="link" ><a href={card.contentLink} target="_blank" rel="noreferrer">{`>>`}Source Link</a></p>
+                <p id="link" ><a href={card.contentLink} target="_blank" rel="noreferrer">Source Link</a></p>
             )
         }
         default: {

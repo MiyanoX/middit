@@ -1,27 +1,25 @@
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import "./Comment.css";
-import { clearComments } from "./commentsSlice";
 
-export const Comment = ({cardId}) => {
-    const comments = useSelector(state => state.comments.comments);
-    const isLoading = useSelector(state => state.comments.isLoading);
-    const dispatch = useDispatch();
-
-    if ( !Object.keys(comments).length || !comments[cardId]) {
-        return <div></div>
-    }
+export const Comment = ({comments}) => {
+    const isLoading = useSelector(state => state.cards.isLoading);
 
     if ( isLoading ) {
         return <p id="commentLoading">Loading...</p>
-    }
-
-    const commentObjectArray = comments[cardId]; 
+    } 
 
     return (
-        <div className="Comment">
-            { commentObjectArray.map((comment) => <ReactMarkdown className="CommentMarkdown" key={comment.data.name}>{ "**" + comment.data.author + ":** " + comment.data.body}</ReactMarkdown>) }
-            <p id="close" onClick={() => dispatch(clearComments(cardId))} >Close X</p>
+        <div>
+            { comments.map((comment) => {
+                    return (
+                        <div className="Comment">
+                            <ReactMarkdown className="CommentMarkdown" key={comment.data.name}>{ "**" + comment.data.author + ":** " + comment.data.body}</ReactMarkdown>
+                            {comment.data.replies ? <Comment comments={comment.data.replies.data.children} /> : <div></div> }
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

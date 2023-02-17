@@ -23,7 +23,7 @@ export const Cards = () => {
 
     if (Object.keys(cards).length !== 0) {
         return (
-            <div className="Cards">
+            <div className="Cards" >
                 {cardToDisplay(cards, inputValue).map((card) =>  
                     <Card cardId={card.id} key={card.id}/>
                 )}
