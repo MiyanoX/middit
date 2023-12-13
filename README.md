@@ -17,7 +17,7 @@ https://middit.netlify.app/
 ## Function
 
 - MiDDiT is title of this web application, where you can click for a refresh of web page 
-- Top center also have aKorone image (My favorite Vtuber:https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q) 
+- Top center also have a Korone image (My favorite Vtuber:https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q) 
 - The top left button is Menu Button, which can toggle the display state of menu bar in the right.
 - The top right button is Search Button, which can toggle the display state of search bar in the top center.
 - Left Red Bar is the subreddit selector for users.
